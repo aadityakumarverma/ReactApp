@@ -1,23 +1,21 @@
 import React from 'react';
 import {Text,Button,View} from 'react-native';
+import MyCustomButton from './Component/MyCustomButton'
+
+
 
 const App = () =>{
+  function Abc(msg,sec)
+  {
+    alert(msg+sec)
+  }
   return(
     <View>
-      <MyButton/>
-    <Text style={{fontSize: 40}}>Anu</Text>
-    
+    <Text style={{fontSize: 40}}>Aaditya Verma</Text>
+    <Button title='btn2' onPress={()=>Abc("Btn2","hi")}/>
     </View>
   );
 };
 
-const MyButton =() =>{
-  return(
-    <View>
-      <Text style={{fontSize:30}}>Aaditya</Text>
-    <Button title='Anu' onPress={()=>{alert("is Under 100")}} />
-    </View>
-  );
-};
 
 export default App;
