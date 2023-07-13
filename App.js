@@ -1,22 +1,24 @@
-import React from 'react';
-import {Text,Button,View} from 'react-native';
-import MyCustomButton from './Component/MyCustomButton'
+import React from "react";
+import { View, Text, FlatList } from 'react-native';
 
+const App = () => {
+  const arrData = [
+    "Aadi","Anu","Under100"
+  ]
 
-
-const App = () =>{
-  function Abc(msg,sec)
-  {
-    alert(msg+sec)
-  }
-  return(
+  return (
     <View>
-    <Text style={{fontSize: 40}}>Aaditya Verma</Text>
-    <Button title='btn2' onPress={Abc}/>
-    <Button title='btn2' onPress={()=>Abc("Btn2","hi")}/>
+      <Text style={{ fontSize: 30 }}>Simple List by using FlatList:</Text>
+      <FlatList
+      data={arrData}
+      renderItem={({item})=>
+        <View style={{marginHorizontal:10}}>
+          <Text>{item}</Text>
+          </View>
+      }
+      />
     </View>
-  );
-};
-
+  )
+}
 
 export default App;
