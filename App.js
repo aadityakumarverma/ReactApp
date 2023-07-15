@@ -15,6 +15,7 @@ const App = () => {
   return (
     <View>
       <Text style={{ fontSize: 30 }}>Simple List by using FlatList:</Text>
+      {/* FlatList already have scroll features */}
       <FlatList
       data={arrData}
       renderItem={({item})=>
