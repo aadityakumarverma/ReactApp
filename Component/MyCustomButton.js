@@ -1,5 +1,6 @@
 import {Text,View,Button} from 'react-native';
 
+// we can use it as a Tag
 
 const MyCustomButton =()=>{
     let myVar="myVarVal";
