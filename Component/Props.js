@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import {Text,Button,View} from 'react-native';
 import MyCustomButton from './Component/MyCustomButton'
 
+//here props refer to properties
 const SecondFun=(intent)=>{
   return(
     <View>
