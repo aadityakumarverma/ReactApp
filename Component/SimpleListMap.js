@@ -12,7 +12,7 @@ const App = () => {
     {id:7,name:"Anu"},
 
     {id:11,name:"Spectra"},
-    {id:21,name:"Ant"},
+    {id:21,name:"Saurabh"},
     {id:31,name:"Ramya"},
     {id:41,name:"Jaya"},
     {id:51,name:"Mehnaj"},
@@ -33,11 +33,7 @@ const App = () => {
       <Text style={{fontSize:50}}>Simple List by using MapFunction:</Text>
      <ScrollView>
      {
-      arrData.map((item)=>
-      <View><Text style={styles.tvItem}>Name: {item.name}</Text>
-    
-        </View>
-      )
+      arrData.map((item)=><Text style={styles.tvItem}>Name: {item.name}</Text>)
      }
      </ScrollView>
       
